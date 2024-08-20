@@ -18,3 +18,44 @@
     max-width: 40%;
   }
 }
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.title {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #ffff;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.title:before {
+  margin-bottom: 8px;
+}
+
+.title:after {
+  margin-top: 8px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, #ccc, #333, #ccc);
+  margin: 20px auto;
+  width: 80%;
+}
